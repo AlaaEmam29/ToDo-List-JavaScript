@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/crud-icon.webp">
+
+    <title>Todo App JavaScript</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="vh-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="wrapper bg-white">
+            <header>Todo App</header>
+            <div class="inputField  d-flex mx-2">
+                <input class="form-control" id="inputGetData" type="text" placeholder="Add your new todo">
+                <button disabled class="btn btn-icon"  id="addBtn"><i class="fas fa-plus"></i></button>
+                <button disabled class="btn btn-icon"  id="editBtn"><i class="fas fa-pen"></i></button>
+            </div>
+            <ul id="todoList" class="list-unstyled">
+<!--data save here from localstorage-->
+            </ul>
+            <div class="footer d-flex justify-content-between align-items-center">
+                <span >You have <span id="pendingTasks"></span> pending tasks</span>
+                <button class="btn btn-dark" id="clearAllData">Clear All</button>
+            </div>
+        </div>
+
+
+
+</div>
+  
+    <script src="js/main.js"></script>
+
+</body>
+</html>
